@@ -385,3 +385,72 @@ img {
 .copy p {
   line-height: 60px;
 }
+
+/* Javascript */
+
+/* Simple Slide */
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 0.5s;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.js [data-slide-nav] {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.js [data-slide-nav] button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 4px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  text-indent: -99px;
+  overflow: hidden;
+  background: #1d1d1d;
+}
+
+/* Simple Anime */
+.js [data-slide-nav] button.active {
+  background: #fec63e;
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+.js .fadeInDown {
+  transform: translate3d(0, -20px, 0);
+}
+
+/* outras personalizações de Anime */
+.fadeInUp {
+  transform: translate3d(0, 20px, 0);
+}
+.fadeInRight {
+  transform: translate3d(20px, 0, 0);
+}
+.fadeInLeft {
+  transform: translate3d(-20px, 0, 0);
+}
+/* fim- Outras personalozações */
+
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform 0.8s, opacity 0.8s;
+}
