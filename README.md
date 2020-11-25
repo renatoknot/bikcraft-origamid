@@ -14,3 +14,4 @@ Link para o [protótipo](https://xd.adobe.com/view/b779f51d-825c-4e75-b085-52381
 - CSS
 - Grid.css
 - PHPMailer
+- Google Analytics
